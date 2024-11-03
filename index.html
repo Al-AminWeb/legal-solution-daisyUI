@@ -45,6 +45,26 @@
         }
 
     </style>
+    <!-- Tailwind Custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#111111',
+                        bronze: '#B68C5A',
+                        gray: '#707070',
+                        silver: '#F3F3F3',
+                        lightSilver: '#CFCFCF',
+                    },
+                    fontFamily: {
+                        ebGaramond: ["EB Garamond", "serif"],
+                        poppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -179,7 +199,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Card 4 -->
             <div class="card bg-base-100 w-96 flex text-center justify-center items-center">
                 <figure>
@@ -196,7 +215,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Card 5 -->
             <div class="card bg-base-100 w-96 flex text-center justify-center items-center">
                 <figure>
@@ -213,7 +231,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Card 6 -->
             <div class="card bg-base-100 w-96 flex text-center justify-center items-center">
                 <figure>
@@ -232,7 +249,6 @@
             </div>
         </div>
     </section>
-
     <section class="container mx-auto lg:py-10 ">
         <div>
             <div class="flex justify-center text-center flex-col items-center">
@@ -241,10 +257,10 @@
                     <br> suffered alteration in some form, by injected humour.</p>
             </div>
         </div>
-
         <div class="py-5 lg:10">
             <div class="carousel w-full">
-                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-1.jpg)]" id="slide1">
+                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-1.jpg)]"
+                     id="slide1">
                     <div class="text-center relative max-w-xs mx-auto">
                         <img alt="" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                              src="images/awlad.png">
@@ -262,9 +278,8 @@
                         <a class="btn btn-circle" href="#slide2">❯</a>
                     </div>
                 </div>
-
-
-                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-2.jpg)]" id="slide2">
+                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-2.jpg)]"
+                     id="slide2">
                     <div class="text-center relative max-w-xs mx-auto">
                         <img alt="" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                              src="images/awlad.png">
@@ -282,10 +297,8 @@
                         <a class="btn btn-circle" href="#slide3">❯</a>
                     </div>
                 </div>
-
-
-
-                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-3.jpg)]" id="slide3">
+                <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.1),rgba(0,0,0,1)),url(./images/slider-3.jpg)]"
+                     id="slide3">
                     <div class="text-center relative max-w-xs mx-auto">
                         <img alt="" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                              src="images/awlad.png">
@@ -303,12 +316,142 @@
                         <a class="btn btn-circle" href="#slide4">❯</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-</main>
+    <!--    FAQ Section -->
+    <section class="container mx-auto lg:py-20">
+        <div>
+            <div class="text-center ">
+                <h1 class="lg:text-4xl eb-garamond-bold  mt-3 sm:text-sm">Frequently Asked Any Questions</h1>
+                <p class="text-base lg:max-w-3xl mx-auto my-10 sm:text-lg px-5">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour.</p>
+            </div>
+            <div>
+                <div class="hero mx-auto ">
+                    <div class="hero-content flex-col lg:flex-row-reverse ">
+                        <img
+                                class="max-w-sm rounded-lg gap-6 w-2/4"
+                                src="images/faq.png"/>
+                        <div class="w-2/4">
+                            <div class="collapse collapse-plus bg-base-200 my-16">
+                                <input name="my-accordion-3" type="radio"/>
+                                <div class="collapse-title text-xl font-medium">Are application fee waivers available?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, . </p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus bg-base-200 my-16">
+                                <input name="my-accordion-3" type="radio"/>
+                                <div class="collapse-title text-xl font-medium">Are application fee waivers available?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, . </p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus bg-base-200 my-16">
+                                <input name="my-accordion-3" type="radio"/>
+                                <div class="collapse-title text-xl font-medium">Are application fee waivers available?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, . </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--Contact Us-->
+    <section class="container mx-auto px-5 mt-28">
+        <h2 class="font-ebGaramond font-extrabold text-4xl mb-6 text-center">Contact With Us</h2>
+        <p class="font-poppins text-gray text-center">How to pursue pleasure rationally  consequences that are extremely painful or <br> again is there anyones who loves to obtain pain of itself.</p>
+        <div class="grid lg:grid-cols-2 gap-7 mt-16">
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2">
+                <div class="bg-silver border-b lg:border-r border-lightSilver text-center py-16 px-12">
+                    <img src="images/location.png" alt="" class="mx-auto mb-4">
+                    <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Address</h5>
+                    <p class="font-poppins text-gray">A108 Adam Street,<br>New York, NY 535022</p>
+                </div>
+                <div class="bg-silver text-center py-16 px-12">
+                    <img src="images/call.png" alt="" class="mx-auto mb-4">
+                    <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Call Us</h5>
+                    <p class="font-poppins text-gray">+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+                </div>
+                <div class="bg-silver sm:border-t md:border-0 border-lightSilver text-center py-16 px-12">
+                    <img src="images/email.png" alt="" class="mx-auto mb-4">
+                    <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Email Us</h5>
+                    <p class="font-poppins text-gray">info@gmail.com<br>info@gmail.com</p>
+                </div>
+                <div class="bg-silver lg:border-l border-t border-lightSilver text-center py-16 px-12">
+                    <img src="images/time.png" alt="" class="mx-auto mb-4">
+                    <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Working Hours</h5>
+                    <p class="font-poppins text-gray">Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
+                </div>
+            </div>
+            <div>
+                <form action="">
+                    <label for="">
+                        <input type="text" placeholder="Your Name" class="bg-silver p-5 rounded-lg input-bordered w-full font-bold mb-7" />
+                    </label>
+                    <label for="">
+                        <input type="email" placeholder="Your Email" class="bg-silver p-5 rounded-lg input-bordered w-full font-bold mb-7" />
+                    </label>
+                    <label for="">
+                        <input type="text" placeholder="Subjects" class="bg-silver p-5 rounded-lg input-bordered w-full font-bold mb-7" />
+                    </label>
+                    <label for="">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages" class="bg-silver p-5 rounded-lg input-bordered w-full font-bold mb-7"></textarea>
+                    </label>
+                    <button class="bg-bronze text-white p-5 rounded-lg input-bordered w-full font-bold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer bg-black text-base-content py-10  mt-16 h-full p-10   " >
+    <nav class="lg:px-20">
+        <img src="images/logo.png" alt="">
+        <p class="text-white w-[259px] mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </nav>
+    <nav class="text-white">
+        <h6 class="eb-garamond-extrabold text-white text-xl">Usefull Link</h6>
+        <a class="link link-hover">Homes</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Cases</a>
+        <a class="link link-hover">blogs</a>
+        <a class="link link-hover">Contact us</a>
+    </nav>
+    <nav class="text-white">
+        <h6 class="eb-garamond-extrabold text-white text-xl">Contact Now</h6>
+        <p>555 4th 5t NW, Washington <br>
+            DC 20530, United States</p>
+        <p>+88 01750 000 000 <br>
+            +88 01750 000 000</p>
+        <p>info@gmail.com <br>
+            info@gmail.com</p>
+    </nav>
+    <form>
+        <h6 class="eb-garamond-extrabold text-white text-xl">Subscribe</h6>
+        <p class="text-base text-white my-5 ">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+        <fieldset class="form-control w-80">
+            <div class="join">
+                <input
+                        type="text"
+                        placeholder="Email Address"
+                        class="input input-bordered join-item" />
+                <button class="btn bg-[#B68C5A] join-item"><img src="images/arrow.png" alt=""></button>
+            </div>
+        </fieldset>
+    </form>
+</footer>
 </body>
 </html>
